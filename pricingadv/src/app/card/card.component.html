@@ -1,0 +1,58 @@
+<!-- <div class="card d-flex flex-column rounded-3 shadow-sm m-5">
+    <div class="card-header d-flex flex-column justify-content-center align-items-center p-3 w-80">
+        <h5 class="my-2 fw-normal">FREE</h5>
+        <div class="price ">
+            <h6 class="fw-800">$0<span class="m-20 fw-200">/month</span></h6>
+        </div>
+    </div>
+    <div class="main align-items-left mt-4 m-5">
+        <ul class="unstyled">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Single User</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>5GB Storage</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                <li><span class="fa-li"><i class="fas fa-times"></i></span>Unlimited
+                  Private Projects</li>
+                <li><span class="fa-li"><i class="fas fa-times"></i></span>Dedicated
+                  Phone Support</li>
+                <li><span class="fa-li"><i class="fas fa-times"></i></span>Free Subdomain
+                </li>
+                <li><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status
+                  Reports</li>
+        </ul>
+    </div>
+
+</div> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<section class="pricing">
+    <div class="container">
+        <!-- Free Tier -->
+        <div class="">
+          <div class="card mb-5">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">{{obj.plan}}</h5>
+              <h6 class="card-price text-center">${{obj.price}}<span class="period">/month</span></h6>
+              <hr>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fa fa-check"></i></span><b>{{obj.domain}}</b><b>{{obj.users[0]}}</b>{{obj.users[1]}}</li>
+                <li><span class="fa-li"><i class="fa fa-check"></i></span>{{obj.storage}}GB Storage</li>
+                <li><span class="fa-li"><i class="fa fa-check"></i></span>Unlimited Public Projects</li>
+                <li><span class="fa-li"><i class="fa fa-check"></i></span>Community Access</li>
+                <li class="{{obj.private[0]}}"><span class="fa-li"><i class="{{obj.private[1]}}"></i></span>Unlimited
+                  Private Projects</li>
+                <li class="{{obj.support[0]}}"><span class="fa-li"><i class="{{obj.support[1]}}"></i></span>Dedicated
+                  Phone Support</li>
+                <li class="{{obj.subdomain[0]}}"><span class="fa-li"><i class="{{obj.subdomain[1]}}"></i></span><b>{{obj.domain}}</b>{{obj.subdomain[2]}}
+                </li>
+                <li class="{{obj.status[0]}}"><span class="fa-li"><i class="{{obj.status[1]}}"></i></span>Monthly Status
+                  Reports</li>
+              </ul>
+              <div class="d-grid">
+                <a href="#" class="btn btn-primary text-uppercase">Button</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  
